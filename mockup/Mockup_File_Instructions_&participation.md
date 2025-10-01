@@ -5,3 +5,9 @@ Please submit one of the following (communicate with others to ensure you don't 
 -Product features Page
 -Pricing Page
 -Team page
+
+Participations:
+Zak - Provided concept for HomePage
+Mirabel - 
+Daniel Roche Moya - provided a concept for pricing page 
+Jana
