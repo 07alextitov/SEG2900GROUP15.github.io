@@ -12,3 +12,4 @@ Mirabel - Provided a second concept for the home page(png type)
 Daniel Roche Moya - provided a concept for pricing page (Mcaffee)
 Jana - provided a concept for the team page (untitled UI)
 Alex - provided a concept for the product features page 
+Yuusef - 
