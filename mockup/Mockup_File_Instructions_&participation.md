@@ -10,4 +10,4 @@ Participations:
 Zak - Provided concept for HomePage (Sentinal_One)
 Mirabel - 
 Daniel Roche Moya - provided a concept for pricing page (Mcaffee)
-Jana
+Jana - provided a concept for the team page (
