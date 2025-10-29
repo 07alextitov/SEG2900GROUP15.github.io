@@ -10,11 +10,34 @@
       font-family: monospace;
       background-color: black;
       color: #33c;
-      background-image: url("https://imgur.com/K5CjNWR.jpg"); 
+      background-image: url("https://imgur.com/K5CjNWR.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+      font-family: monospace;
     }
+
+     .typewriter h2{
+  overflow: hidden;
+  border-right: .15em solid blue;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  width: 0;
+  animation:
+    typing 3.5s steps(30, end) forwards,
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 28% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: blue; }
+}
 
     header {
       text-align: center;
@@ -92,6 +115,7 @@
         align-items: center;
       }
     }
+
   </style>
 </head>
 <body>
@@ -100,7 +124,9 @@
   </header>
 
   <section class="hero">
-    <h2>Welcome to <span class="highlight">PassPal</span><span class="cursor">|</span></h2>
+    <div class="typewriter">
+      <h2>Welcome to <span class="highlight">PassPal</span><span class="cursor">|</span></h2>
+    </div>
     <p>Your passwords. Your machine. No browser gatekeeping.</p>
     <a href="#get-started" class="cta-button">Get Started</a>
   </section>
