@@ -1,10 +1,128 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PassPal Features</title>
+  <!-- (Optional) keep your external file; inline styles below will match the About page and can override -->
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ===== Base theme (matches About page) ===== */
+    body {
+      margin: 0;
+      font-family: monospace;
+      background-color: black;
+      color: #33c;
+      background-image: url("https://imgur.com/K5CjNWR.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      border-bottom: 1px solid rgba(51, 51, 204, 0.5);
+      box-shadow: 0 0 12px rgba(51, 51, 204, 0.25);
+    }
+    .logo {
+      margin: 0;
+      color: #33c;
+      letter-spacing: 2px;
+      text-shadow: 0 0 6px rgba(51, 51, 204, 0.6);
+    }
+
+    /* ===== Page header section ===== */
+    .features-page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 20px 24px;
+      text-align: center;
+    }
+    .features-page h2 {
+      margin: 0 0 8px;
+      color: #6cf; /* lighter neon blue to match About hero */
+      text-shadow: 0 0 6px rgba(102, 204, 255, 0.45);
+    }
+    .features-page .tagline {
+      max-width: 900px;
+      margin: 0 auto 24px;
+      line-height: 1.5;
+      color: #6cf;
+      text-shadow: 0 0 6px rgba(102, 204, 255, 0.25);
+    }
+
+    /* ===== Grid of feature cards (equal size, evenly spaced) ===== */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      align-items: stretch;     /* even vertical fill */
+      justify-items: stretch;   /* even horizontal fill */
+      margin: 0 auto 32px;
+      padding: 0 20px;
+    }
+    .feature-block {
+      background: rgba(0, 0, 0, 0.55);
+      border: 1px solid rgba(51, 51, 204, 0.5);
+      border-radius: 14px;
+      box-shadow: 0 0 12px rgba(51, 51, 204, 0.25);
+      padding: 16px 20px;
+
+      /* equal-height card behavior */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100%;
+      min-height: 180px;
+      text-align: left;
+    }
+    .feature-block h3 {
+      margin: 0 0 8px;
+    }
+    .feature-block p {
+      margin: 6px 0 0;
+      line-height: 1.5;
+    }
+
+    /* ===== CTA button (same light blue style as About page) ===== */
+    .cta-button {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid #6cf;
+      color: #6cf;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.05s ease, box-shadow 0.15s ease;
+      box-shadow: 0 0 8px rgba(102, 204, 255, 0.35);
+    }
+    .cta-button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 0 14px rgba(102, 204, 255, 0.55);
+    }
+
+    /* Add a comfortable gap before the footer */
+    .features-page .cta-button { margin-top: 40px; }
+    
+    /* ===== Footer (terminal style) ===== */
+    .terminal-footer {
+      margin-top: 24px;
+      padding: 16px 20px 28px;
+      text-align: center;
+      opacity: 0.95;
+      border-top: 1px solid rgba(51, 51, 204, 0.5);
+      box-shadow: 0 0 12px rgba(51, 51, 204, 0.25) inset;
+    }
+    
+    
+    .feature-grid {
+      row-gap: 60px;      /* vertical spacing (was 24px via gap) */
+      column-gap: 24px;   /* keep horizontal spacing the same */
+  /* If you already have `gap: 24px;`, this overrides just the row spacing */
+}
+  </style>
 </head>
 <body>
   <header>
@@ -42,7 +160,8 @@
       </div>
     </div>
 
-    <a href="pricing.html" class="cta-button">Explore Plans</a>
+    <!-- If your pricing file is named pricing_passpal.html, change this href accordingly -->
+    <a href="pricing_passpal.html" class="cta-button">Explore Plans</a>
   </section>
 
   <footer class="terminal-footer">
@@ -51,3 +170,4 @@
   </footer>
 </body>
 </html>
+```
