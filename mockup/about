@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About PassPal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: monospace;
+      background-color: black;
+      color: #33c;
+      background-image: url("https://imgur.com/K5CjNWR.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      border-bottom: 1px solid rgba(51, 51, 204, 0.5);
+      box-shadow: 0 0 12px rgba(51, 51, 204, 0.25);
+    }
+
+    .logo {
+      margin: 0;
+      color: #33c;
+      letter-spacing: 2px;
+      text-shadow: 0 0 6px rgba(51, 51, 204, 0.6);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 48px 20px 8px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .hero h2 { margin: 0 0 8px; }
+    .tagline {
+      max-width: 900px;
+      margin: 0 auto 16px;
+      line-height: 1.5;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid #33c;
+      color: #33c;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.05s ease, box-shadow 0.15s ease;
+      box-shadow: 0 0 8px rgba(51,51,204,0.35);
+    }
+    .cta-button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 0 14px rgba(51,51,204,0.55);
+    }
+    .cta-button.alt {
+      border-color: #6cf;
+      color: #6cf;
+      box-shadow: 0 0 8px rgba(102,204,255,0.35);
+    }
+    .cta-button.alt:hover { box-shadow: 0 0 14px rgba(102,204,255,0.55); }
+
+    .terminal-card {
+      max-width: 1100px;
+      margin: 0 auto 24px;
+      padding: 16px 20px;
+      background: rgba(0, 0, 0, 0.55);
+      border: 1px solid rgba(51, 51, 204, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(51, 51, 204, 0.25);
+      text-align: center;
+    }
+    
+    
+    .cta-row a[href="product_features.html"] {
+      border-color: #6cf;   /* pick your color */
+      color: #6cf;
+      box-shadow: 0 0 8px rgba(102, 204, 255, 0.35);  /* optional glow */
+    }
+    .cta-row a[href="product_features.html"]:hover {
+      box-shadow: 0 0 14px rgba(102, 204, 255, 0.55);
+    }
+
+
+    .features {
+      max-width: 1100px;
+      margin: 0 auto 32px;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      align-items: stretch;    
+      justify-items: stretch;   
+    }
+    .feature {
+      background: rgba(0, 0, 0, 0.55);
+      border: 1px solid rgba(51, 51, 204, 0.5);
+      border-radius: 14px;
+      box-shadow: 0 0 12px rgba(51, 51, 204, 0.25);
+      padding: 16px 20px;
+
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100%;
+      min-height: 180px;
+    }
+    .feature h3 {
+      margin: 0 0 8px;
+      text-align: left;
+    }
+    .feature p, .feature ul {
+      margin: 6px 0 0;
+      line-height: 1.5;
+    }
+
+    footer.terminal-footer {
+      margin-top: 24px;
+      padding: 16px 20px 28px;
+      text-align: center;
+      opacity: 0.95;
+      border-top: 1px solid rgba(51, 51, 204, 0.5);
+      box-shadow: 0 0 12px rgba(51, 51, 204, 0.25) inset;
+    }
+    
+    .hero h2,
+    .hero .tagline {
+      color: #6cf;                 /* lighter neon blue */
+      text-shadow: 0 0 6px rgba(102, 204, 255, 0.45);
+    }
+    
+    
+
+    .features {
+      margin-bottom: 64px;     
+      position: relative;
+      z-index: 1;
+    }
+    .features + .terminal-card {
+      margin-top: 24px;        
+      position: relative;
+      z-index: 0;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">P@SSP∆L</h1>
+  </header>
+
+  <section class="hero">
+    <h2>About PassPal</h2>
+    <p class="tagline">
+      The offline, desktop-first password manager built for students, builders, and privacy-maximalists.
+    </p>
+    <div class="cta-row">
+      <a class="cta-button" href="product_features.html">See Features</a>
+      <a class="cta-button alt" href="pricing_passpal.html">View Pricing</a>
+    </div>
+  </section>
+
+  <section class="terminal-card">
+    <h2>Our Mission</h2>
+    <p>
+      We created PassPal to keep credentials <strong>under your control</strong> — no always-on cloud, no surprise
+      subscriptions, and no dark-pattern lock-ins. Your vault lives with you, encrypted locally, with optional manual
+      export for backup.
+    </p>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>🔐 Security Principles</h3>
+      <ul>
+        <li>Local-first, offline-capable vault</li>
+        <li>Strong encryption with a single master key you control</li>
+        <li>No tracking, telemetry, or analytics by default</li>
+        <li>Simple file backups you can verify yourself</li>
+      </ul>
+    </div>
+
+    <div class="feature">
+      <h3>🖥️ Browser-Free Access</h3>
+      <p>
+        Optimized for keyboard workflows and quick search — copy, paste, rotate, done.
+        No browser extension required.
+      </p>
+    </div>
+
+    <div class="feature">
+      <h3>📦 Transparent by Design</h3>
+      <p>
+        Clear pricing, readable export formats, and human-sized UI.
+        What you see is what you own.
+      </p>
+    </div>
+  </section>
+
+  <section class="terminal-card">
+    <h2>How PassPal Works</h2>
+    <ol>
+      <li>Create a master password (only you know it).</li>
+      <li>Store logins, API keys, and notes in your local vault.</li>
+      <li>Use quick search and one-click copy to fill credentials anywhere.</li>
+      <li>Back up on your terms: external drive, encrypted archive, or both.</li>
+    </ol>
+  </section>
+
+  <section class="terminal-card">
+    <h2>Roadmap</h2>
+    <ul>
+      <li>Import from popular managers</li>
+      <li>Optional 2-device sync via user-owned storage</li>
+      <li>Per-entry sharing for teams and clubs</li>
+      <li>CLI companion for power users</li>
+    </ul>
+    <div class="cta-row">
+      <a class="cta-button" href="teampage.html">Meet the Team</a>
+      <a class="cta-button alt" href="index_homepage.html">Back to Home</a>
+    </div>
+  </section>
+
+  <footer class="terminal-footer">
+    <p>>_ About manifest compiled…</p>
+    <p>>_ Integrity verified.</p>
+    <p>>_ Contact: root@passpal.dev</p>
+  </footer>
+</body>
+</html>
