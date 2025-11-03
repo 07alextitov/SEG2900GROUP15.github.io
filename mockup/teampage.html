@@ -2,6 +2,11 @@
 
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PassPal Teams</title>
+  
+  <style>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>PassPal Teams</title>
@@ -17,6 +22,14 @@
       background-position: center;
     }
 
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rhba(0,0,0,0.75);
+      z-index: -1;
+    }
+    
     header {
       text-align: center;
       padding: 30px 20px;
@@ -27,6 +40,32 @@
      .logo {
       font-size: 3em;
       margin: 0;
+      color: #33c;
+      text-shadow : 0 0 10px #33c, 0 0 20px #33c, 0 0 40 px #66f;
+       animation: pulse 2s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from { text-shadow:0 0 10px #33c; }
+      to { text-shadow: 0 0 25px #66f, 0 0 50px #66f; }
+
+    .main-nav {
+      text-align: center;
+      background-color: rgba (0, 0, 0, 0.7);
+      padding: 10px 0;
+      border-bottom: 1px solid #33c
+    }
+
+    .main-nav a {
+      color: #33c;
+      text-decoration: none;
+      margin: 0 15 px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .main-nav a:hover {
+      color: #66f;
     }
 
     .teams {
@@ -34,9 +73,11 @@
       padding: 60px 20px;
       background-color: rgba(0, 0, 0, 0.6);
     }
+    
     .teams h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
+      font-size: 2.5em;
+      color: #66f;
+      margin-bottom: 0.5em;
     }
 
     .team-benefits {
@@ -55,6 +96,12 @@
       border-radius: 8px;
       text-align: center;
     }
+
+    .benefit:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(51, 51, 204, 0.6);
+    }
+      
     .cta-button {
       display: inline-block;
       margin-top: 20px;
@@ -77,6 +124,25 @@
       padding: 20px;
       border-top: 1px solid #33c;
       background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .terminal-footer p {
+      margin: 5px 0;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #33c;
+      width: 0;
+      animation: typing 3s steps(30, end) forwards, blink 0.8s step-end infinite alternate;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      from, to {border-color: transparent; }
+      50% { bordeer-color :#33c; }
     }
 
     @media (max-width: 600px) {
@@ -156,6 +222,7 @@
 </style>
 <link href="styles.css" rel="stylesheet"/>
 </head>
+  
 <body>
 <nav class="pp-nav" role="navigation">
 <div class="pp-nav-inner">
@@ -215,3 +282,7 @@
 </script>
 </body>
 </html>
+
+ <a href = "contact.html" class="floating-button"> Contact Us </a>
+</body>
+</htlm>
